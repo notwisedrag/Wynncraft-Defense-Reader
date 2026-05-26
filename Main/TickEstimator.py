@@ -57,3 +57,5 @@ def ResEstimator(data,time,terr_name,isPrint=False):
 
     if isPrint:
         print_usages(usage_list)
+
+    return usage_list
