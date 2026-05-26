@@ -5,7 +5,7 @@ from DefensePredictions import *
 data = territory_data_extraction()
 time = time_after_previous_tick(data,isPrint=True)
 
-terr_name = 'Royal Dam'
+terr_name = 'Entrance to Nivla Woods'
 res = ResEstimator(data,time,terr_name,isPrint=True)
 Predicted_Defs = DefensePrediction(res)
 print("For Territory: ", terr_name)

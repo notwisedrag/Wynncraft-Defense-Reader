@@ -23,6 +23,8 @@ def time_after_previous_tick(data,isPrint=False):
         if city is None:
             continue
         generation, storage, limit = ResExtraction(data[city])
+        if generation[1] > 7000 or generation[2] > 7000 or generation[3] > 7000 or generation[4] > 7000:
+            continue
         if limit[1] == 1200:
             usage_per_hour = 800
         elif limit[1] == 2400:
